@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <script>
+      let min = 1;
+      let max = 10;
+      let guess = 0;
+      let target = Math.random() * (max - min + 1);
+      Number: target = Math.floor(target) + min;
+      Number: guess = prompt("Guess a random number between 1 and 10");
+
+      while (guess != target) {
+        guess = prompt("Guess Again!");
+          if (guess < target) {
+          alert("Too low!");
+          
+        } 
+        else if (guess > target) {
+          alert("Too high!");
+          
+        } 
+        else {
+          alert("You got it!");
+          break;
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
